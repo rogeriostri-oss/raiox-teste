@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agendar demonstração do Raio-X do Seu Negócio</title>
+<meta name="description" content="Deixe seu contato e a 3X Consultoria chama você no WhatsApp para mostrar o Raio-X funcionando: pedido de compra por fornecedor, estoque e caixa da sua loja.">
+<meta name="theme-color" content="#0B6E8A">
+<link rel="canonical" href="https://raiox.3xconsultoria.com.br/conhecer">
+<meta property="og:title" content="Agende uma demonstração do Raio-X">
+<meta property="og:description" content="Veja como o Raio-X mostra o que vai faltar, o que comprar de cada fornecedor e quanto vai sobrar no caixa.">
+<meta property="og:url" content="https://raiox.3xconsultoria.com.br/conhecer">
+<link rel="icon" href="/assets/icone.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
+<script src="/assets/form.js?v=1" defer></script>
+</head>
+<body>
+<a class="skip" href="#formulario">Pular para o formulário</a>
+
+<header class="wrap top">
+  <a class="marca" href="/" aria-label="Raio-X do Seu Negócio, página inicial">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0B6E8A"/><rect x="7" y="9" width="18" height="3" rx="1.5" fill="#EEF2F4"/><rect x="7" y="15" width="12" height="3" rx="1.5" fill="#EEF2F4"/><rect x="7" y="21" width="7" height="3" rx="1.5" fill="#E6A845"/></svg>
+    Raio-X
+  </a>
+  <nav aria-label="Principal">
+    <a href="/">Conhecer o Raio-X</a>
+    <a href="/app/entrar">Entrar</a>
+  </nav>
+</header>
+
+<main class="wrap captura">
+  <div>
+    <h1>Veja o Raio-X com a cara da sua loja</h1>
+    <p class="lead">Deixe seu contato. A 3X Consultoria chama você no WhatsApp para combinar a demonstração.</p>
+    <ol aria-label="Como funciona">
+      <li><b>Você preenche o formulário</b><span>Leva menos de um minuto.</span></li>
+      <li><b>A 3X chama no WhatsApp</b><span>Para entender a loja e marcar dia e horário.</span></li>
+      <li><b>Você vê funcionando</b><span>Pedido por fornecedor, estoque parado, validade e caixa do dia.</span></li>
+    </ol>
+  </div>
+
+  <div class="form" id="formulario">
+    <form id="lead" novalidate>
+      <h2>Agendar demonstração</h2>
+      <p class="sub">Os campos com asterisco são obrigatórios.</p>
+      <div class="grade">
+        <div class="campo inteiro" data-campo="nome">
+          <label for="nome">Seu nome *</label>
+          <input id="nome" name="nome" autocomplete="name" required maxlength="120">
+          <p class="erro" id="nome-erro">Escreva seu nome.</p>
+        </div>
+        <div class="campo" data-campo="whatsapp">
+          <label for="whatsapp">WhatsApp com DDD *</label>
+          <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(88) 90000-0000" required maxlength="20">
+          <p class="erro" id="whatsapp-erro">Use o número com DDD, por exemplo (88) 90000-0000.</p>
+        </div>
+        <div class="campo" data-campo="email">
+          <label for="email">E-mail <small>(opcional)</small></label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="160">
+          <p class="erro" id="email-erro">Confira o e-mail.</p>
+        </div>
+        <div class="campo inteiro" data-campo="empresa">
+          <label for="empresa">Nome da loja ou empresa</label>
+          <input id="empresa" name="empresa" autocomplete="organization" maxlength="160">
+        </div>
+        <div class="campo inteiro">
+          <label for="cidade">Cidade e estado</label>
+          <div class="uf-cidade">
+            <input id="cidade" name="cidade" autocomplete="address-level2" maxlength="80" aria-label="Cidade">
+            <select id="uf" name="uf" aria-label="Estado">
+              <option value="">UF</option>
+              <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option>
+            </select>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="segmento">Tipo de negócio</label>
+          <select id="segmento" name="segmento">
+            <option value="">Escolha</option>
+            <option>Supermercado</option><option>Mercadinho ou mercearia</option><option>Atacarejo</option><option>Padaria</option><option>Açougue</option><option>Farmácia</option><option>Material de construção</option><option>Loja de varejo</option><option>Distribuidora</option><option>Outro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="lojas">Quantas lojas</label>
+          <select id="lojas" name="lojas">
+            <option value="">Escolha</option>
+            <option>1</option><option>2 a 3</option><option>4 a 10</option><option>Mais de 10</option>
+          </select>
+        </div>
+        <div class="campo inteiro">
+          <label for="erp">Sistema que a loja usa hoje</label>
+          <select id="erp" name="erp">
+            <option value="">Escolha</option>
+            <option>Hiper</option><option>Varejo Fácil</option><option>SysPDV</option><option>VR Software</option><option>Solidcon</option><option>SGBr</option><option>Bling</option><option>Tiny</option><option>Omie</option><option>Conta Azul</option><option>Sankhya</option><option>TOTVS</option><option>SAP Business One</option><option>Outro</option><option>Não uso sistema</option>
+          </select>
+        </div>
+        <div class="campo inteiro">
+          <label for="mensagem">O que você mais quer resolver? <small>(opcional)</small></label>
+          <textarea id="mensagem" name="mensagem" maxlength="1000" placeholder="Ex.: falta produto na gôndola, compro demais de alguns fornecedores, não sei quanto sobra no caixa"></textarea>
+        </div>
+      </div>
+      <div class="isca" aria-hidden="true"><label for="site">Não preencha</label><input id="site" name="site" tabindex="-1" autocomplete="off"></div>
+      <label class="consent" id="consent-box"><input type="checkbox" id="consentimento" name="consentimento" required><span>Autorizo a 3X Consultoria a entrar em contato pelo WhatsApp, telefone ou e-mail informados para apresentar o Raio-X do Seu Negócio. Posso pedir a exclusão dos meus dados a qualquer momento.</span></label>
+      <button class="btn btn-primary" type="submit" id="enviar">Agendar demonstração</button>
+      <p class="falha" id="falha" role="alert"></p>
+      <p class="lgpd">Usamos esses dados só para falar com você sobre o Raio-X, conforme a LGPD. Para pedir a exclusão, responda a qualquer mensagem da 3X ou escreva pelo site <a href="https://3xconsultoria.com.br">3xconsultoria.com.br</a>.</p>
+    </form>
+    <div class="enviado" id="enviado" hidden tabindex="-1">
+      <div class="ok" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <h2>Pedido de demonstração enviado</h2>
+      <p>A 3X Consultoria vai chamar você no WhatsApp informado para combinar o dia e o horário.</p>
+      <a class="btn btn-ghost" href="/">Voltar para a página inicial</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Raio-X do Seu Negócio é um produto da <a href="https://3xconsultoria.com.br">3X Consultoria e Treinamentos</a>.</span>
+    <nav aria-label="Rodapé"><a href="/">Página inicial</a><a href="/app/entrar">Entrar</a></nav>
+  </div>
+</footer>
+</body>
+</html>
